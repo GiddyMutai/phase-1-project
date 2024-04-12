@@ -1,9 +1,10 @@
-let listItems = document.createElement("li");
 
-// listens for the submit event for substitution
-document.addEventListener("DOMContentLoaded", () => {
-  displaySquad()
+document.addEventListener("DOMContentLoaded", () => {   
+  displaySquad() //this function displays a squad of 11 random players when the DOM loads
+  
   let form = document.querySelector("form");  
+
+  // listens for the submit event for substitution
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     jersey = (e.target["get-player"].value);
