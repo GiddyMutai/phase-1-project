@@ -1,4 +1,4 @@
-// listens for the submit event
+// listens for the submit event for substitution
 document.addEventListener("DOMContentLoaded", () => {
   let form = document.querySelector("form");
   form.addEventListener("submit", (e) => {
@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const matchingPlayer = players.find(player => player.id === jerseyNumber);
         if (matchingPlayer) {
         console.log("Found player:", matchingPlayer);
-        // You can further process the matching player data here
+        displayPlayer(matchingPlayer)
         } else {
         console.log("Player with jersey number", jersey, "not found");
         }
@@ -22,15 +22,15 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// function to create the todo list
-function createToDo(matchingPlayer) {
+// function to create the player list
+function displayPlayer(matchingPlayer) {
   let btn = document.createElement("button");
   btn.addEventListener("click", handleDelete);
   btn.textContent = "remove";
   let listItems = document.createElement("li");
-  listItems.innerHTML = description;
+  listItems.innerText = matchingPlayer.name
   listItems.appendChild(btn);
-  document.querySelector("#tasks").appendChild(listItems);
+  document.querySelector("#players").appendChild(listItems);
 }
 
 

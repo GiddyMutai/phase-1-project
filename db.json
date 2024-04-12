@@ -3,12 +3,47 @@
         {
             "name":"Andre Onana",
             "position":"Goalkeeper",
-            "id":1
+            "id":24
         },
         {
             "name":"Altay Bayindir",
             "position":"Goalkeeper",
+            "id":1
+        },
+        {
+            "name":"Victor Lindelof",
+            "position":"Defender",
             "id":2
+        },
+        {
+            "name":"Harry Maguire",
+            "position":"Defender",
+            "id":5
+        },
+        {
+            "name":"Lisandro Martinez",
+            "position":"Defender",
+            "id":6
+        },
+        {
+            "name":"Raphael Varane",
+            "position":"Defender",
+            "id":19
+        },
+        {
+            "name":"Diogo Dalot",
+            "position":"Defender",
+            "id":20
+        },
+        {
+            "name":"Luke Shaw",
+            "position":"Defender",
+            "id":23
+        },
+        {
+            "name":"Aaron Wan-Bissaka",
+            "position":"Defender",
+            "id":29
         }
     ]    
 }
