@@ -1,0 +1,55 @@
+Manchester United Team Manager
+a simple web app that outputs the prefferd Manchester United first 11 roster. April 11 2024
+
+By Gideon Mutai
+
+Description
+This is a team manager with which users can:
+
+1. Create a team roster of 11 in-field players fetched from the first team players database
+2. Substitute a displayed player by deleting the already dipslayed in-field player and inputting the jersey number of the player the user wishes to be placed.
+3. Nominate a player from the academy who he/she deems fit to receive first XI team status by inputting the player metadata in the fields, which is appended the first team database
+
+the live link is as below;
+
+[https://github.com/GiddyMutai/phase-1-project]
+
+How to Use
+Requirements
+A computer with a terminal and node installed.
+Access to the internet.
+json-server
+
+Installation Process
+Clone this repository using
+
+  git clone git@github.com:kisurizzz/project-1-currency-converter.git
+or by downloading a ZIP file of the code.
+
+The repository, if downloaded as a .zip file will need to be extracted to your preferred location.
+
+Navigate to the project folder on your terminal.
+
+Run the local server
+
+  json-server --watch db.json
+Run the application using live server
+
+Technologies Used
+HTML
+CSS
+JavaScript
+
+Support and Contact Details
+Incase of any query, need for collaboration or issues with this code, feel free to reach me at gideon.mutai@student.moringaschool.com
+
+License
+MIT License
+
+Copyright © 2024 Gideon Mutai
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
