@@ -44,6 +44,56 @@
             "name":"Aaron Wan-Bissaka",
             "position":"Defender",
             "id":29
-        }
+        },
+        {
+            "name":"Johnny Evans",
+            "position":"Defender",
+            "id":34
+        },
+        {
+            "name":"Willy Kambwala",
+            "position":"Defender",
+            "id":57
+        },
+        {
+            "name":"Sofyan Amrabat",
+            "position":"Midfielder",
+            "id":4
+        },
+        {
+            "name":"Mason Mount",
+            "position":"Midfielder",
+            "id":7
+        },
+        {
+            "name":"Bruno Fernades",
+            "position":"Midfielder",
+            "id":8
+        },
+        {
+            "name":"Christian Eriksen",
+            "position":"Midfielder",
+            "id":14
+        },
+        {
+            "name":"Amad Diallo",
+            "position":"Midfielder",
+            "id":16
+        },
+        {
+            "name":"Casemiro",
+            "position":"Midfielder",
+            "id":18
+        },
+        {
+            "name":"Kobbie Mainoo",
+            "position":"Midfielder",
+            "id":37
+        },
+        {
+            "name":"Scott McTominay",
+            "position":"Midfielder",
+            "id":39
+        }   
     ]    
 }

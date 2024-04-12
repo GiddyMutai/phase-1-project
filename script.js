@@ -1,3 +1,5 @@
+let listItems = document.createElement("li");
+
 // listens for the submit event for substitution
 document.addEventListener("DOMContentLoaded", () => {
   displaySquad()
@@ -42,7 +44,14 @@ function displaySquad(){
     .then((players) => {
         players.sort(() => Math.random() - 0.5) //shuffles the order
         const squad = players.slice(0,11) // slices the first 11 randomized players
-        console.log(squad)
+        // iterate through the array and append the name to the list selector
+        let i = 0;
+
+        while (i < 11 && i < squad.length) { // Check both loop condition and array length
+            const player = squad[i];
+            displayPlayer(player);
+            i++;
+        }   
     })
 }
 
