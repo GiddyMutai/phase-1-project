@@ -1,6 +1,7 @@
 // listens for the submit event for substitution
 document.addEventListener("DOMContentLoaded", () => {
-  let form = document.querySelector("form");
+  displaySquad()
+  let form = document.querySelector("form");  
   form.addEventListener("submit", (e) => {
     e.preventDefault();
     jersey = (e.target["get-player"].value);
@@ -33,6 +34,17 @@ function displayPlayer(matchingPlayer) {
   document.querySelector("#players").appendChild(listItems);
 }
 
+
+// function to fetch random 11 players 
+function displaySquad(){
+    fetch("http://localhost:3000/first-11/")
+    .then((response) => response.json())
+    .then((players) => {
+        players.sort(() => Math.random() - 0.5) //shuffles the order
+        const squad = players.slice(0,11) // slices the first 11 randomized players
+        console.log(squad)
+    })
+}
 
 
 
