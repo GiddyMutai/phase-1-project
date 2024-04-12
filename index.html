@@ -25,7 +25,7 @@
           <form id="create-task-form">
             <label for="get-player">Input Jersey Number:</label>
             <input type="number" id="get-player" name="get-player" placeholder="jersey">
-            <input type="submit" value="Get Player" id="submit">
+            <input type="submit" value="get-player" id="submit">
           </form>
         </div>
 
@@ -33,6 +33,32 @@
           <h2>My Players:</h2>
           <ul id="players">
           </ul>
+        </div>
+
+        <br>
+
+        <div id="nominate">
+          <h2>Nominate a player to the first Team</h2>
+          <p>
+            This section contains a form in which you fill a player from the academy who you feel should 
+            recieve first team status. This is based on your analysis of his perfomance in the U-18s and U-21s 
+            league games.
+          </p>
+
+          <br>
+
+          <div id="nominate-player">
+            <form id="create-player-form">
+              <label for="get-player"> Player Name:</label>
+              <input type="text" id="player-name" name="player-name" placeholder="name">
+              <label for="get-player"> Player Position:</label>
+              <input type="text" id="player-pos" name="player-pos" placeholder="position">
+              <label for="get-player"> Player Jersey:</label>
+              <input type="number" id="jersey-number" name="jersey-number" placeholder="jersey-number">
+              <input type="submit" value="submit" id="submit">
+            </form>
+          </div>
+
         </div>
     </div>
 <script src="script.js"></script>
