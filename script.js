@@ -9,19 +9,16 @@ document.addEventListener("DOMContentLoaded", () => {
     jersey = e.target["get-player"].value;
 
     // GETs the player matching the jersey number
-    fetch("http://localhost:3000/first-11/")
+    fetch("http://localhost:3000/first-11")
       .then((response) => response.json())
       .then((players) => {
         const jerseyNumber = parseInt(jersey, 10); // Parse jersey string to a number
-        console.log(jerseyNumber);
-        const matchingPlayer = players.find(
-          (player) => player.id === jerseyNumber
-        );
+        const matchingPlayer = players.find((player) => player.id === jerseyNumber);
         if (matchingPlayer) {
           console.log("Found player:", matchingPlayer);
           displayPlayer(matchingPlayer);
         } else {
-          console.log("Player with jersey number", jersey, "not found");
+          alert(`Player with jersey number ${jersey} not found`);
         }
       });
   });
@@ -31,7 +28,7 @@ document.addEventListener("DOMContentLoaded", () => {
 function displayPlayer(matchingPlayer) {
   let btn = document.createElement("button");
   btn.addEventListener("click", handleDelete);
-  btn.textContent = "remove";
+  btn.textContent = "substitute";
   let listItems = document.createElement("li");
   listItems.innerText = matchingPlayer.name;
   listItems.appendChild(btn);
@@ -67,16 +64,17 @@ function submitPlayer() {
   const form = document.getElementById("nominate-player-form");
 
   form.addEventListener("submit", (event) => {
-    event.preventDefault(); // Prevent default form submission behavior
+    event.preventDefault();
 
     const playerName = document.getElementById("player-name").value;
     const playerPosition = document.getElementById("player-pos").value;
     const jerseyNumber = document.getElementById("jersey-number").value;
 
-    // Now you have the values of all the input fields
-    console.log("Player Name:", playerName);
-    console.log("Player Position:", playerPosition);
-    console.log("Jersey Number:", jerseyNumber);
+    // Data validation (add checks as needed)
+    if (!playerName || !playerPosition || !jerseyNumber) {
+      alert("Please fill out all fields!");
+      return;
+    }
 
     const data = {
       name: playerName,
@@ -84,15 +82,29 @@ function submitPlayer() {
       id: jerseyNumber,
     };
 
-    return fetch("http://localhost:3000/first-11", {
+    fetch("http://localhost:3000/first-11", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
         Accept: "application/json",
       },
       body: JSON.stringify(data),
-    });
+    })
+      .then((response) => response.json())
+      .then((result) => {
+        // Success!
+        const successMessage = document.createElement("p");
+        successMessage.textContent = `Player with ID ${result.id} successfully nominated!`;
+        document.body.appendChild(successMessage);
+      })
+      // error handling
+      .catch((error) => {
+        const errorMessage = document.createElement("p");
+        errorMessage.textContent = `Error nominating player: ${error.message}`;
+        errorMessage.style.color = "red"; // Add visual distinction for error
+        document.body.appendChild(errorMessage);
+      });
   });
 }
 
-submitPlayer()
+submitPlayer();
