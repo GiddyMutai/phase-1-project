@@ -81,7 +81,7 @@ function submitPlayer() {
       position: playerPosition,
       id: jerseyNumber,
     };
-
+    // this ia POST request to the database
     fetch("http://localhost:3000/first-11", {
       method: "POST",
       headers: {
