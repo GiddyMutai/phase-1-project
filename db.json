@@ -94,6 +94,36 @@
             "name":"Scott McTominay",
             "position":"Midfielder",
             "id":39
-        }   
+        },
+        {
+            "name":"Anthony Martial",
+            "position":"Forward",
+            "id":9
+        },
+        {
+            "name":"Marcus Rashford",
+            "position":"Forward",
+            "id":10
+        },
+        {
+            "name":"Rasmus Hojlund",
+            "position":"Forward",
+            "id":11
+        },
+        {
+            "name":"Alejandro Garnacho",
+            "position":"Forward",
+            "id":17
+        },
+        {
+            "name":"Antony",
+            "position":"Forward",
+            "id":21
+        },
+        {
+            "name":"Shola Shoretire",
+            "position":"Forward",
+            "id":47
+        }  
     ]    
 }

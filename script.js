@@ -58,7 +58,7 @@ function displaySquad(){
 
 
 
-// fucntion to handle deletion of the tasks
+// function to handle deletion a player
 function handleDelete(e) {
   e.target.parentNode.remove();
 }
