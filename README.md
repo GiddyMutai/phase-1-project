@@ -7,9 +7,9 @@
 ## Description
 This is a simple team manager app with which users can:
 
-1. Create a team roster of 11 in-field players fetched from the first team players database
+1. Create a team roster of 11 in-field players fetched from the first team players database.
 2. Substitute a displayed player by deleting the already dipslayed in-field player and inputting the jersey number of the player the user wishes to be placed.
-3. Nominate a player from the academy who he/she deems fit to receive first XI team status by inputting the player metadata in the fields, which is appended to the first team database
+3. Nominate a player from the academy who he/she deems fit to receive first XI team status by inputting the player metadata in the fields, which is appended to the first team database.
 
 ## Installation
 You use git clone to be able to download the documents in the GitHub
@@ -33,7 +33,7 @@ The repository, if downloaded as a .zip file, will need to be extracted to your 
 
 2. Run the local server using the command [json-server --watch db.json] 
 
-3. Run the application using live server
+3. Run the application using live server to display the website.
 
 ```
 
